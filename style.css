@@ -1,0 +1,57 @@
+.navbar {
+    background-color: #000000; /* Siyah arkaplan rengi */
+    padding: 20px 0; /* Üst ve alt boşlukları 10 piksel, sağ ve sol boşluklar sıfır */
+    text-align: right; /* Yazıları sağa dayama */
+    position: relative; /* Pozisyonu belirleme */
+    animation: slideIn 0.5s forwards; /* Animasyonu başlatma */
+  }
+  
+  @keyframes slideIn {
+    from {
+      right: -100%; /* Başlangıçta sağda başlatma */
+    }
+    to {
+      right: 0; /* Sola kaydırma */
+    }
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar ul li {
+    display: inline;
+    margin-right: 10px; /* Yazılar arasındaki boşluğu ayarlar */
+  }
+  
+  .navbar ul li:last-child {
+    margin-right: 0; /* Son yazıda sağ boşluk olmasın */
+  }
+  
+  .navbar ul li:first-child {
+    position: absolute; /* Pozisyonu mutlak belirleme */
+    left: 10px; /* Sol kenardan 10 piksel içeri */
+  }
+  
+  .navbar ul li a {
+    padding: 8px 12px;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Arial", sans-serif;
+    font-size: 18px;
+  }
+
+  .navbar-brand {
+    color: #ffffff; /* Beyaz yazı rengi */
+    font-family: "Arial", sans-serif;
+    font-size: 18px;
+    position: absolute; /* Pozisyonu mutlak belirleme */
+    left: 10px; /* Sol kenardan 10 piksel içeri */
+    top: 50%; /* Dikey ortalamaya göre hizalama */
+    transform: translateY(-50%); /* Dikey ortalamaya göre konumlandırma */
+  }
+  
+
+
